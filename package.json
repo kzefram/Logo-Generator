@@ -1,0 +1,25 @@
+{
+  "name": "logo-generator",
+  "version": "1.0.0",
+  "description": "Logo generator ",
+  "main": "index.js",
+  "scripts": {
+    "test": "log-gernerator.text.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kzefram/Logo-Generator.git"
+  },
+  "keywords": [
+    "logo",
+    "triangle",
+    "circle",
+    "square"
+  ],
+  "author": "Karen Bourgeois",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kzefram/Logo-Generator/issues"
+  },
+  "homepage": "https://github.com/kzefram/Logo-Generator#readme"
+}
