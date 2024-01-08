@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/kzefram/Logo-Generator/issues"
   },
-  "homepage": "https://github.com/kzefram/Logo-Generator#readme"
+  "homepage": "https://github.com/kzefram/Logo-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.2.12"
+  }
 }
