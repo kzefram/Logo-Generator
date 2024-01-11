@@ -1,8 +1,8 @@
 const fs = require('fs');
-import { prompt } from 'inquirer';
-const {generatelogo} = require('./Lib/shapes.mjs'); 
+const inquirer = require('inquirer');
+const {generatelogo} = require('./Lib/shapes.js'); 
 const path = require('path');
-const { Shapes, Circle, Square, Triangle } = require('./Lib/shapes.mjs');
+const { Shapes, Circle, Square, Triangle } = require('./Lib/shapes.js');
 
 
 const questions = [
@@ -47,7 +47,7 @@ function writeToFile(fileName, data) {
 // writing to the md file
 async function init() {
     const responses = await inquirer.prompt(questions);
-    console.log("Passing your information to create README file...");
+    console.log("Passing your information to create you logo...");
     const logo = generatelogo(responses); 
     writeToFile(`./examples/${responses['file-name']}`, logo);
 }
