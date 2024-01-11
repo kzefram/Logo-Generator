@@ -13,23 +13,23 @@ const questions = [
     {
         type: 'input',
         name: 'text',
-        question1: 'What text would you like? Enter up to three characters.'
+        question1: 'What text would you like? Enter up to three characters. '
     },
     {
         type: 'input',
         name: 'text-colour',
-        question2: 'Enter the text colour keyword, hexadecimal#, RGBA code: '
+        question2: 'Enter the text colour keyword, hexadecimal#: '
     },
     {
         type: 'list',
         name: 'shapes',
-        question3: 'What shape would you like?',
+        question3: 'What shape would you like? ',
         shapes: [triangle, circle, square]
     },
     {
         type: 'input',
         name: 'shape-colour',
-        question4: 'Enter the shape colour keyword, hexadecimal#, RGBA code:  '
+        question4: 'Enter the shape colour keyword, hexadecimal#:  '
     }
 ];
 
