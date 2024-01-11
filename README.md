@@ -51,7 +51,7 @@ Karen Bourgeois https://github.com/kzefram
 
 ## License
 
-MIT
+MIT https://github.com/kzefram/Logo-Generator?tab=MIT-1-ov-file
 
 ## Contribution
 
