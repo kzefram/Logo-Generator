@@ -22,7 +22,13 @@ class Shapes {
     getPerimeter() {
       return 2 * Math.PI * this.radius;
     }
-  }
+
+    drawCircle() {
+      const svg = `<svg width="400" height="400">
+          <circle cx="200" cy="200" r="${this.radius}" fill="${this.color}" />
+      </svg>`;
+      return svg;
+  }  
   
   class Square extends Shapes {
     constructor(color, side) {
@@ -67,5 +73,4 @@ class Shapes {
     }
 }
   
-  module.exports = { Shapes, Circle, Square, Triangle };
-  module.exports = { generatelogo };
+  module.exports = { Shapes, Circle, Square, Triangle, generatelogo };
