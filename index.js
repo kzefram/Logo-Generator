@@ -9,7 +9,7 @@ const questions = [
     {
         type: 'input',
         name: 'file-name',
-        message: 'Enter the name of the logo file: '
+        message: 'Enter the name of the logo file (no file extentions): '
     },
     {
         type: 'input',
@@ -49,7 +49,8 @@ async function init() {
     const responses = await inquirer.prompt(questions);
     console.log("Passing your information to create you logo...");
     const logo = generatelogo(responses); 
-    writeToFile(`./examples/${responses['file-name']}`, logo);
+    const fileName = `./example/${responses['file-name']}.svg`;
+    writeToFile(`./examples/${responses['file-name']}.svg`, logo);
 }
 
 // Function call to initialize app

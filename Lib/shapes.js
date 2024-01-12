@@ -12,24 +12,17 @@ class Shapes {
   class Circle extends Shapes {
     constructor(color, radius) {
       super(color);
-      this.radius = radius;
-    }
-  
-    getArea() {
-      return Math.PI * this.radius ** 2;
-    }
-  
-    getPerimeter() {
-      return 2 * Math.PI * this.radius;
+      this.radius = 150;
     }
 
     drawCircle() {
-      const svg = `<svg width="400" height="400">
-          <circle cx="200" cy="200" r="${this.radius}" fill="${this.color}" />
+      const svg = `<svg width="300" height="200">
+          <circle cx="150" cy="150" r="${this.radius}" fill="${this.color}" />
       </svg>`;
       return svg;
-  }  
-  
+    } 
+  }
+
   class Square extends Shapes {
     constructor(color, side) {
       super(color, side);
@@ -42,6 +35,7 @@ class Shapes {
       </svg>`;
       return svg;
     }
+
   }
   
   class Triangle extends Shapes {
