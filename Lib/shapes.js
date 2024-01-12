@@ -17,7 +17,7 @@ class Shapes {
 
     drawCircle() {
       const svg = `<svg width="300" height="200">
-          <circle cx="150" cy="150" r="${this.radius}" fill="${this.color}" />
+          <circle cx="150" cy="150" r="${this.radius}" fill="${this.color}" text="${this.text}" />
       </svg>`;
       return svg;
     } 
@@ -31,7 +31,7 @@ class Shapes {
   
     drawSquare() {
       const svg = `<svg width="300" height="200">
-        <rect x="50" y="50" width="${this.side}" height="${this.side}" fill="${this.color}"  />
+        <rect x="50" y="50" width="${this.side}" height="${this.side}" fill="${this.color}" text="${this.text}" />
       </svg>`;
       return svg;
     }
@@ -46,7 +46,7 @@ class Shapes {
   
     drawTriangle() {
       const svg = `<svg width="300" height="200">
-        <polygon points="150,50 100,150 200,150" style="fill:${this.color}/>
+        <polygon points="150,50 100,150 200,150" style="fill:${this.color} text="${this.text}"/>
       </svg>`;
       return svg;
     }
@@ -57,11 +57,11 @@ class Shapes {
 
     switch (shapes) {
         case 'circle':
-            return new Circle(data['text-colour'], data.radius).drawCircle();
+            return new Circle(data['shape-colour', 'text-color'], data.radius).drawCircle();
         case 'square':
-            return new Square(data['shape-colour'], data.side).drawSquare();
+            return new Square(data['shape-colour', 'text-color'], data.side).drawSquare();
         case 'triangle':
-            return new Triangle(data['shape-colour'], data.side).drawTriangle();
+            return new Triangle(data['shape-colour', 'text-color'], data.side).drawTriangle();
         default:
             return 'Invalid shape selected';
     }

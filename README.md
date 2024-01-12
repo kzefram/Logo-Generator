@@ -39,11 +39,14 @@ Acceptance Criteria
 
 ## Installation
 
-There is no install instructions for this application because it runs in the console.
+You will need to install node modules.
+- type <npm install> at the command line.
 
 ## Usage
 
 The usage of this application is help developers make logos for their clients. It also demonstrates my abillity to do the coding and testing. I used iquirer, node, Jest and JSON.
+- to start the app, at the command line, type <node index.js>
+- Then answer the questions
 
 ## Credits
 
